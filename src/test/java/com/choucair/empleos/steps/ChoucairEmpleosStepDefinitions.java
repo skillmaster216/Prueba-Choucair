@@ -29,26 +29,6 @@ public class ChoucairEmpleosStepDefinitions {
       OnStage.setTheStage(new OnlineCast());
   }
 
-  /*@Given("the browser is open")
-  public void the_browser_is_open() {
-    theActorCalled("ro").wasAbleTo(OpenTheBrowser.on(googlePage));
-  }
-
-  @When("el ro search {string}")
-  public void el_ro_search(String keyword) {
-    theActorInTheSpotlight().attemptsTo(Search.theTerm(keyword));
-  }
-
-  @Then("verify the first result is from {string}")
-  public void verify_the_first_result_is_from(String pageName) {
-    theActorInTheSpotlight()
-      .should(
-        seeThat(Results.firstResultPageName(), 
-          containsString(pageName)
-        )
-      );
-  }*/
-
   @Given("que la pagina de choucair empleos este abierta")
     public void que_la_pagina_de_choucair_empleos_este_abierta(){
         theActorCalled("Usuario").wasAbleTo(OpenTheBrowser.on(choucairEmpleosPage));

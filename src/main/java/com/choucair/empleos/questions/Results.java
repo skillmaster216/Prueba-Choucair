@@ -9,7 +9,6 @@ import com.choucair.empleos.user_interfaces.ChoucairEmpleosPage;
 public class Results implements Question<String> {
   @Override
   public String answeredBy(Actor actor) {
-    System.out.println(ChoucairEmpleosPage.RESULT_MESSAGE);
     return Text.of(ChoucairEmpleosPage.RESULT_MESSAGE).viewedBy(actor).asString();
   }
 
